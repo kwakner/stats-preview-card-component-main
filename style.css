@@ -1,0 +1,127 @@
+:root {
+  --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+  --Soft-violet-accent: hsl(277, 64%, 61%);
+  --White-main-heading-stats: hsl(0, 0%, 100%);
+  --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+  --Font-size: 15px;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  padding: 1.5rem;
+  background-color: var(--Very-dark-blue-main-background);
+  color: white;
+  font-size: var(--Font-size);
+  overflow: hidden;
+}
+
+img,
+.vio {
+  background-color: var(--Soft-violet-accent);
+  opacity: 0.42;
+}
+
+.main-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text-container {
+  background-color: var(--Dark-desaturated-blue-card-background);
+  text-align: center;
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+h1 {
+  margin-top: 15px;
+  line-height: normal;
+  color: var(--White-main-heading-stats);
+  font-family: "Inter", sans-serif;
+}
+
+.insight {
+  color: var(--Soft-violet-accent);
+}
+
+.note {
+  color: var(--Slightly-transparent-white-main-paragraph);
+  line-height: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.numb {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.stat {
+  text-transform: uppercase;
+  color: var(--Slightly-transparent-white-stat-headings);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 15%;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .desk {
+    width: 400px;
+  }
+
+  img{
+    width: 450px;
+  }
+
+  .text-container {
+    text-align: left;
+    padding: 2.5rem;
+    width: 450px;
+  }
+
+  .statistics {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .stat {
+    font-size: 12px;
+  }
+}

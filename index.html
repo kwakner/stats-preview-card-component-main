@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <picture class="vio">
+        <source class="desk"
+          srcset="images/image-header-desktop.jpg" 
+          media="(min-width:600px)"
+        />
+        <source srcset="images/image-header-mobile.jpg" />
+        <img src="./images/image-header-mobile.jpg" alt="" />
+      </picture>
+
+      <div class="text-container">
+        <h1>
+          Get <span class="insight">insights</span> that help your business
+          grow.
+        </h1>
+
+        <p class="note">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <div class="statistics">
+          <p>
+            <span class="numb">10k</span> <br /><span class="stat"
+              >companies</span
+            >
+          </p>
+          <br />
+
+          <p>
+            <span class="numb">314</span><br /><span class="stat"
+              >templates</span
+            >
+          </p>
+          <br />
+
+          <p>
+            <span class="numb">12M+</span><br /><span class="stat"
+              >Queries</span
+            >
+          </p>
+        </div>
+
+        <!-- <div class="history">
+            <p class="bold">10k+</p>
+            <div class="opec">companies</div><br />
+
+            <p class="bold">314</p>
+            <div class="opec">templates</div><br />
+            <p class="bold">12m+</p>
+            <div class="opec">queries</div>
+        </div> -->
+      </div>
+    </main>
+  </body>
+</html>
